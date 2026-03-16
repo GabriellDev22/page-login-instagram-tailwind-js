@@ -11,13 +11,13 @@
     body {
         margin: 0;
         height: 0;
-        
     }
+    
 
-    main {
-        display: flex;
-    }
     @media (max-width: 450px){
+        body{
+            margin-top: 10rem;
+        }
         #lista1{
             display: none;
         }
@@ -31,6 +31,7 @@
         #div_login{
             margin-left: 0;
         }
+        
     }
 </style>
 
@@ -46,11 +47,11 @@
                 </div>
 
                 <!--login-->
-                <div id="div_login"  class=" flex flex-col justify-center ml-24 mt-40">
-                    <div class=" flex justify-center p-5">
+                <div class="div_form_login">
+                    <div class="div_logo_form">
                         <img class="mb-4" src="../img/insta-logo.png" width="170px">
                     </div>
-                    <form class="flex flex-col justify-center items-center gap-2 w-96 sm: w72  ">
+                    <form  class="form_login">
                         <input type="name"
                             class="border border-zinc-800 rounded w-64 h-9 bg-slate-100 p-2 focus:outline-none"
                             placeholder="telefone, nome de usuário">
