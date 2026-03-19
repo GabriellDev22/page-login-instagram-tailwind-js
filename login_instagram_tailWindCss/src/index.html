@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,36 +13,38 @@
         margin: 0;
         height: 0;
     }
-    
 
-    @media (max-width: 450px){
-        body{
+
+    @media (max-width: 450px) {
+        body {
             margin-top: 10rem;
         }
-        #lista1{
+
+        #lista1 {
             display: none;
         }
-        #lista_mobile{
+
+        #lista_mobile {
             display: flex;
             flex-direction: column;
             gap: 5px;
             max-width: 100%;
-            
+
         }
-        #div_login{
+
+        #div_login {
             margin-left: 0;
         }
-        
+
     }
 </style>
 
 <body>
     <main>
         <article>
-            <div class="flex justify-center w-screen h-3/4 sm:w-screen">
-
+            <div class="div_main">
                 <!--Imagens-->
-                <div class="md:flex justify-center items-center w-96 h-screen hidden  ">
+                <div class="div_imagens">
                     <img src="../img/insta2.png" width="200px">
                     <img src="../img/insta1.png" width="200px">
                 </div>
@@ -51,38 +54,24 @@
                     <div class="div_logo_form">
                         <img class="mb-4" src="../img/insta-logo.png" width="170px">
                     </div>
-                    <form  class="form_login">
-                        <input type="name"
-                            class="border border-zinc-800 rounded w-64 h-9 bg-slate-100 p-2 focus:outline-none"
-                            placeholder="telefone, nome de usuário">
-                        <input type="password"
-                            class="border border-zinc-800 rounded w-64 h-9 bg-slate-100 p-2 focus:outline-none"
-                            placeholder="senha">
-                        <button
-                            class="bg-blue-600 p-1 w-64 mt-2 rounded-lg hover:bg-blue-500 text-white font-semibold">Entrar</button>
+                    <form class="form_login">
+                        <input type="name"    class="input_form"    placeholder="telefone, nome de usuário">
+                        <input type="password"class="input_form" placeholder="senha">
+                        <button class="submit-form-button">Entrar</button>
                     </form>
-                    <div class="flex flex-col justify-center text-center">
+                    <div class=" div_access_links">
                         <br>
-                        <hr>
-                        <p class="text-slate-500 font-medium">OU</p>
-                        <hr>
-                        <br>
-                        <div class="flex justify-center items-center gap-1 ">
+                        <div class="flex justify-center items-center gap-1">
                             <i class="fa-brands fa-facebook fa-lg" style="color: #0d7ed4;"></i><a href="#"
                                 class="text-blue-500 font-medium">Entrar com o facebook</a>
                         </div>
-                        <a href="#" class="font-medium hover:underline mt-3 ">esqueceu a senha?</a>
-
-                        <div class="flex justify-center mt-16 gap-1 ">
+                        <a href="#" class="font-medium hover:underline mt-3">esqueceu a senha?</a>
+                        <div class=" div_link_registration ">
                             <p>Não tem uma conta?</p>
                             <a href="#" class="text-blue-600 font-semibold">Cadastre-se</a>
                         </div>
                     </div>
                 </div>
-
-
-            </div>
-
             </div>
         </article>
     </main>
@@ -90,47 +79,49 @@
     <!--rodapé-->
     <footer>
         <div id="lista1" class="flex justify-center gap-1 text-xs sm:hidden ">
-            <li class="list-none hover:underline" ><a href="#">Meta</a></li>
-            <li class="list-none hover:underline" ><a href="#">Sobre</a> </li>
-            <li class="list-none hover:underline" ><a href="#">Blog </a></li>
-            <li class="list-none hover:underline" ><a href="#">Carreiras</a></li>
-            <li class="list-none hover:underline" ><a href="#">Ajuda</a></li>
-            <li class="list-none hover:underline" ><a href="#">API</a></li>
-            <li class="list-none hover:underline" ><a href="#">Privacidade</a></li>
-            <li class="list-none hover:underline" ><a href="#">Termos</a></li>
-            <li class="list-none hover:underline" ><a href="#">Localizações</a></li>
-            <li class="list-none hover:underline" ><a href="#">Instagram Lite</a></li>
-            <li class="list-none hover:underline" ><a href="#">Meta AI</a></li>
-            <li class="list-none hover:underline" ><a href="#">Artigos da Meta AI</a></li>
-            <li class="list-none hover:underline" ><a href="#">Threads</a></li>
-            <li class="list-none hover:underline" ><a href="#">Upload de contatos e não usuários<a><li>
-            <li class="list-none hover:underline" ><a href="#">Meta Verified</a></li>
+            <li class="list-none hover:underline"><a href="#">Meta</a></li>
+            <li class="list-none hover:underline"><a href="#">Sobre</a> </li>
+            <li class="list-none hover:underline"><a href="#">Blog </a></li>
+            <li class="list-none hover:underline"><a href="#">Carreiras</a></li>
+            <li class="list-none hover:underline"><a href="#">Ajuda</a></li>
+            <li class="list-none hover:underline"><a href="#">API</a></li>
+            <li class="list-none hover:underline"><a href="#">Privacidade</a></li>
+            <li class="list-none hover:underline"><a href="#">Termos</a></li>
+            <li class="list-none hover:underline"><a href="#">Localizações</a></li>
+            <li class="list-none hover:underline"><a href="#">Instagram Lite</a></li>
+            <li class="list-none hover:underline"><a href="#">Meta AI</a></li>
+            <li class="list-none hover:underline"><a href="#">Artigos da Meta AI</a></li>
+            <li class="list-none hover:underline"><a href="#">Threads</a></li>
+            <li class="list-none hover:underline"><a href="#">Upload de contatos e não usuários<a>
+            <li>
+            <li class="list-none hover:underline"><a href="#">Meta Verified</a></li>
         </div>
-        <div id="lista_mobile" class="text-xs hidden" >
-            <div class="flex gap-1 justify-center " >
-                <li class="list-none hover:underline" ><a href="#">Meta</a></li>
-                <li class="list-none hover:underline" ><a href="#">Sobre</a> </li>
-                <li class="list-none hover:underline" ><a href="#">Blog </a></li>
-                <li class="list-none hover:underline" ><a href="#">Carreiras</a></li>
-                <li class="list-none hover:underline" ><a href="#">Ajuda</a></li>
-                <li class="list-none hover:underline" ><a href="#">API</a></li>
-                <li class="list-none hover:underline" ><a href="#">Privacidade</a></li>
-                <li class="list-none hover:underline" ><a href="#">Termos</a></li>
-                <li class="list-none hover:underline" ><a href="#">Localizações</a></li>
+        <div id="lista_mobile" class="text-xs hidden">
+            <div class="flex gap-1 justify-center ">
+                <li class="list-none hover:underline"><a href="#">Meta</a></li>
+                <li class="list-none hover:underline"><a href="#">Sobre</a> </li>
+                <li class="list-none hover:underline"><a href="#">Blog </a></li>
+                <li class="list-none hover:underline"><a href="#">Carreiras</a></li>
+                <li class="list-none hover:underline"><a href="#">Ajuda</a></li>
+                <li class="list-none hover:underline"><a href="#">API</a></li>
+                <li class="list-none hover:underline"><a href="#">Privacidade</a></li>
+                <li class="list-none hover:underline"><a href="#">Termos</a></li>
+                <li class="list-none hover:underline"><a href="#">Localizações</a></li>
             </div>
-            <div class="flex gap-1 justify-center " >
-                <li class="list-none hover:underline" ><a href="#">Instagram Lite</a></li>
-                <li class="list-none hover:underline" ><a href="#">Meta AI</a></li>
-                <li class="list-none hover:underline" ><a href="#">Artigos da Meta AI</a></li>
-                <li class="list-none hover:underline" ><a href="#">Threads</a></li>
-                <li class="list-none hover:underline" ><a href="#">Upload de contatos e não usuários<a><li>
-                <li class="list-none hover:underline" ><a href="#">Meta Verified</a></li>
+            <div class="flex gap-1 justify-center ">
+                <li class="list-none hover:underline"><a href="#">Instagram Lite</a></li>
+                <li class="list-none hover:underline"><a href="#">Meta AI</a></li>
+                <li class="list-none hover:underline"><a href="#">Artigos da Meta AI</a></li>
+                <li class="list-none hover:underline"><a href="#">Threads</a></li>
+                <li class="list-none hover:underline"><a href="#">Upload de contatos e não usuários<a>
+                <li>
+                <li class="list-none hover:underline"><a href="#">Meta Verified</a></li>
             </div>
-            
+
         </div>
-        <div class="flex justify-center gap-2 text-xs mt-2 mb-5" >
-            <li class="list-none" >Português(Brasil)</li>
-            <li class="list-none" >© 2025 Instagram from Meta</li>
+        <div class="flex justify-center gap-2 text-xs mt-2 mb-5">
+            <li class="list-none">Português(Brasil)</li>
+            <li class="list-none">© 2025 Instagram from Meta</li>
         </div>
     </footer>
 </body>
