@@ -29,3 +29,16 @@
 .div_link_registration{
     @apply flex justify-center mt-10 gap-1
 }
+
+/*Footer*/
+.div_list_rodape_desktop{
+    @apply hidden justify-center gap-1 text-xs sm:flex
+}
+
+.div_list_rodape_mobile{
+    @apply text-xs flex sm:hidden
+}
+
+.link_list_rodape{
+    @apply list-none hover:underline
+}
