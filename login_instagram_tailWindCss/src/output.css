@@ -590,10 +590,6 @@ video {
   gap: 0.5rem;
 }
 
-.gap-10 {
-  gap: 2.5rem;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -695,7 +691,7 @@ video {
   outline-offset: 2px;
 }
 
-.submit-form-button {
+.submit_form_button {
   margin-top: 0.5rem;
   width: 16rem;
   border-radius: 0.5rem;
@@ -707,7 +703,7 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.submit-form-button:hover {
+.submit_form_button:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
 }
